@@ -3,9 +3,14 @@
     "cypress": "^13.15.0"
   },
   "scripts": {
-    "e2e:chrome": "cypress run --browser chrome",
-    "e2e:firefox": "cypress run --browser firefox",
-    "e2e:edge": "cypress run --browser edge",
-    "e2e:electron": "cypress run --browser electron"
+    "e2e:chrome:fullHD": "cypress run --browser chrome --config viewportWidth=1980,viewportHeight=1080",
+    "e2e:chrome:mobile": "cypress run --browser chrome --config viewportWidth=375,viewportHeight=667",
+    "e2e:firefox:fullHD": "cypress run --browser firefox --config viewportWidth=1980,viewportHeight=1080",
+    "e2e:firefox:mobile": "cypress run --browser firefox --config viewportWidth=375,viewportHeight=667",
+    "e2e:edge:fullHD": "cypress run --browser edge --config viewportWidth=1980,viewportHeight=1080",
+    "e2e:edge:mobile": "cypress run --browser edge --config viewportWidth=375,viewportHeight=667",
+    "e2e:electron:fullHD": "cypress run --browser electron --config viewportWidth=1980,viewportHeight=1080",
+    "e2e:electron:mobile": "cypress run --browser electron --config viewportWidth=375,viewportHeight=667",
+    "e2e:all": "npm run e2e:chrome:fullHD && npm run e2e:chrome:mobile && npm run e2e:firefox:fullHD && npm run e2e:firefox:mobile && npm run e2e:edge:fullHD && npm run e2e:edge:mobile && npm run e2e:electron:fullHD && npm run e2e:electron:mobile"
   }
 }
