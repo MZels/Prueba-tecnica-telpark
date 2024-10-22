@@ -1,10 +1,14 @@
-# SOLUCIÓN DE PRUEBA TÉCNICA (QA dev)
+# SOLUCIÓN DE LA PRUEBA TÉCNICA PROPUESTA POR TELPARK PARA QA AUTOMATION
 
 En este repositorio se resuelven los ejercicios de la prueba técnica propuesta en el documento "Prueba técnica para QA Automation" adjunto en el directorio raíz de este repositorio.
 
 ## Descripción de la solución propuesta:
 
-Para la solución de esta prueba técnica se a elegido Cypress (javascript) como framework de automatización de pruebas.
+Para la solución de esta prueba técnica se ha optado por el siguiente entorno tecnológico:
+
+* Cypress como framework de automatización de pruebas
+* Javascript con ECMAScript Modules
+* Page Object Model como patrón de diseño
 
 ## Requisitos previos para la ejecución del proyecto
 
@@ -14,16 +18,25 @@ Para la ejecución de este proyecto es necesario instalar las siguientes herrami
 * Cualquier herramienta de desarrollo software (IDE), por ejemplo: [Visual Studio Code](https://code.visualstudio.com/Download)
 * Los navegadores Chrome, Firefox y Edge
 
-Para más detalles, puede consultar en el siguiente enlace  a la documentación oficial de Cypress, los requisitos de sistema para su ejecución.
+Para más detalles puede consultar en el siguiente enlace a la documentación oficial de Cypress los requisitos de sistema para su ejecución:
+https://docs.cypress.io/app/get-started/install-cypress#System-requirements
 
 ## Instrucciones de instalación
 
-Aunque en un entorno profesional, se suelen es excluír los ficheros necesarios para la ejecución de Cypress (directorio "node_modules" del proyecto) dado su peso, con el fin de facilitar la ejecución de esta prueba técnica, el repositorio incluye todo lo necesario para ejecutar la solución. De esta manera, tan solo será neceario clonar el repositorio:
+Aunque es común excluír los ficheros necesarios para la ejecución de Cypress (directorio "node_modules" del proyecto) por su peso, con el fin de facilitar la ejecución de esta prueba técnica, el repositorio incluye todo lo necesario para ejecutar la solución. De esta manera, tan solo será neceario clonar el repositorio siguiendo estos pasos:
+
+**Mediante git:**
 
 1. Crear una carpeta en la que clonar este repositorio
 2. Clonar el repositorio: 
 
     > git clone https://github.com/MZels/Prueba-tecnica-telpark
+
+**Por descarga directa**
+
+Descargando el proyecto como zip:
+
+![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/captura_download_zip.png)
 
 ### Instrucciones de Ejecución de las pruebas
 
@@ -42,7 +55,7 @@ Aunque en un entorno profesional, se suelen es excluír los ficheros necesarios 
    
 7. Seleccionar el que se desea ejecutar (Cypress ejecutará las prueba de ese Spec en el navegador seleccionado)
 
-### Extensiones recomendadas para Visual Studio Code:
+## Extensiones recomendadas para el desarrollo con Visual Studio Code:
 
 * **Cypress Fixture-IntelliSense**: Supports your cy.fixture() by providing intellisense for existing fixtures.
 * **Cypress Helper**: Various helpers and commands for integration with Cypress.
@@ -50,9 +63,6 @@ Aunque en un entorno profesional, se suelen es excluír los ficheros necesarios 
 * **Cypress Snippets**: This extension includes the newest and most common cypress snippets.
 * **Open Cypress**: Allows you to open Cypress specs and single it() blocks directly from VS Code.
 * **Test Utils**: Easily add or remove .only and .skip modifiers with keyboard shortcuts or the command palette.
-
-## Detalles de la implementación y sus Outputs
-
 
 ## Autor
 
