@@ -1,5 +1,5 @@
 /*
-ENUNCIADO DEL EJERCICIO 1: Automatización Web Básica
+Ejercicio 1: Automatización Web Básica
 
 Desarrolla un script que:
 
@@ -17,11 +17,11 @@ const searchText = 'Automatización de Pruebas'
 const baseUrl = 'https://www.google.com/'
 
 /*
-  Hasta donde yo se, con el comando de ejecución "open" no se puede cambiar de navegador, ya que primero seleccionas el navegador sobre el que se ejecutarán las pruebas
-  y luego eliges la spec a ejecutar con dicho navegador.
-
-  Es por esto que para la ejecución del mismo test en distintos navegadores y con diferentes resoluciones he definido una serie de scripts en "package.json".
-  A cada comando se le indica mediante opciones, el navegador con el que ejecutar los tests y la configuración de resolución de ventana.
+  Entiendo que para la ejecución del mismo test en distintos navegadores y con diferentes resoluciones,
+  la solución típica en entornos con CI/CD consiste en realizar diferentes ejecuciones del mismo test pero con distintas configuraciones.
+  
+  Para esto he definido una serie de scripts en "package.json".
+  A cada comando se le indica a través de sus opciones, el navegador con el que ejecutar los tests y la configuración de resolución de ventana.
 
   Por último, para facilitar la ejecución de esta prueba técnica, he definido un script que ejecuta todos los demás, de esa manera podremos ejecutar el test con las
   diferentes configuraciones mediante el siguiente comando:
