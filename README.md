@@ -12,6 +12,7 @@ Para la ejecución de este proyecto es necesario instalar las siguientes herrami
 
 * Node.js 18.x, 20.x, 22.x y posteriores (Entorno de ejecución para JavaScript) [Link](https://nodejs.org/)
 * Cualquier herramienta de desarrollo software (IDE), por ejemplo: [Visual Studio Code](https://code.visualstudio.com/Download)
+* Los navegadores Chrome, Firefox y Edge
 
 Para más detalles, puede consultar en el siguiente enlace  a la documentación oficial de Cypress, los requisitos de sistema para su ejecución.
 
@@ -40,6 +41,15 @@ Aunque en un entorno profesional, se suelen es excluír los ficheros necesarios 
     * ejercicio_2.cy.js
    
 7. Seleccionar el que se desea ejecutar (Cypress ejecutará las prueba de ese Spec en el navegador seleccionado)
+
+### Extensiones recomendadas para Visual Studio Code:
+
+* **Cypress Fixture-IntelliSense**: Supports your cy.fixture() by providing intellisense for existing fixtures.
+* **Cypress Helper**: Various helpers and commands for integration with Cypress.
+* **Cypress Snippets**: Useful Cypress code snippets.
+* **Cypress Snippets**: This extension includes the newest and most common cypress snippets.
+* **Open Cypress**: Allows you to open Cypress specs and single it() blocks directly from VS Code.
+* **Test Utils**: Easily add or remove .only and .skip modifiers with keyboard shortcuts or the command palette.
 
 ## Detalles de la implementación y sus Outputs
 

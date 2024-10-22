@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "cypress": "^13.15.0"
+  },
+  "scripts": {
+    "e2e:chrome": "cypress run --browser chrome",
+    "e2e:firefox": "cypress run --browser firefox",
+    "e2e:edge": "cypress run --browser edge",
+    "e2e:electron": "cypress run --browser electron"
   }
 }
