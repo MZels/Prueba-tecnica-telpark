@@ -36,7 +36,7 @@ Aunque es común excluír los ficheros necesarios para la ejecución de Cypress 
 
 Descargando el proyecto como zip:
 
-![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/captura_download_zip.png)
+![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/captura_download_zip.png?raw=true)
 
 ### Instrucciones de Ejecución de las pruebas
 
