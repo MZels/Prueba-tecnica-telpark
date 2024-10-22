@@ -11,6 +11,6 @@
     "e2e:edge:mobile": "cypress run --browser edge --config viewportWidth=375,viewportHeight=667",
     "e2e:electron:fullHD": "cypress run --browser electron --config viewportWidth=1980,viewportHeight=1080",
     "e2e:electron:mobile": "cypress run --browser electron --config viewportWidth=375,viewportHeight=667",
-    "e2e:all": "npm run e2e:chrome:fullHD && npm run e2e:chrome:mobile && npm run e2e:firefox:fullHD && npm run e2e:firefox:mobile && npm run e2e:edge:fullHD && npm run e2e:edge:mobile && npm run e2e:electron:fullHD && npm run e2e:electron:mobile"
+    "e2e:example": "npm run e2e:firefox:fullHD && npm run e2e:firefox:mobile && npm run e2e:edge:fullHD && npm run e2e:edge:mobile"
   }
 }
