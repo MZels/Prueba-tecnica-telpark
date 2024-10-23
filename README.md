@@ -69,9 +69,9 @@ Descargando el proyecto como zip:
 
 **En el ejercicio 1:**
 
-* Las capturas de pantalla se guardaran en carpetas con el nombre del navegador utilizado y el nombre del fichero será el de la resolución utilizada en el test
+* Las capturas de pantalla se guardarán en carpetas con el nombre del navegador utilizado y el nombre del fichero será el de la resolución utilizada en el test
 
-* Para el la ejecución del test en distintos navegadores y resoluciones se ha definido el script "e2e:example" en el fichero 'package.json que ejecuta el test con 4 configuraciones distintas:
+* Para el la ejecución del test en distintos navegadores y resoluciones he definido el script "e2e:example" en el fichero 'package.json que ejecuta el test con 4 configuraciones distintas:
 
     - browser = firefox | resolución fulHD (1980x1080)
     - browser = firefox | resolución mobile (375x667)
@@ -82,7 +82,17 @@ Descargando el proyecto como zip:
     > npm run e2e:example
 
 **En el ejercicio 2**
-Se han obviado las pruebas de visualización, las pruebas 'cross browser' y las pruebas de carga y rendimiento
+El diseño de las pruebas solitadas, lo he realizado en las correspondientes 'Specs' que implementaría en el proyecto redactandolos en un comentario dentro de cada 'it':
+
+![specs para el ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/estructura_specs.png?raw=true)
+![ejemplo de spec del ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/ejemplo_spec.png?raw=true)
+
+Para la elaboración del plan de pruebas se han considerado únicamente los tests e2e automatizables que aportan valor, por lo tanto no se han tenido en consideración los siguiente tipos de pruebas:
+
+* Pruebas de visualización
+* Pruebas 'cross browser'
+* Pruebas de carga y rendimiento
+* Pruebas de componentes (restricciones de formato en inputs, etc...)
 
 ## Autor
 

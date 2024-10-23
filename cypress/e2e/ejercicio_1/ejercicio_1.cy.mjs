@@ -11,8 +11,8 @@ Desarrolla un script que:
       - Se ejecute la misma prueba con distintos navegadores o resoluciones
 */
 
-import { HomePage } from "../support/Pages/HomePage.mjs"
-import { ArticlePage } from "../support/Pages/ArticlePage.mjs"
+import { HomePage } from "../../Pages/HomePage.mjs"
+import { ArticlePage } from "../../Pages/ArticlePage.mjs"
 
 /*
   Para la ejecución del mismo test en distintos navegadores y con diferentes resoluciones, he definido una serie de scripts en "package.json".

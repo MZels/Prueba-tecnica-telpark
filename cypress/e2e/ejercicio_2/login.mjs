@@ -24,7 +24,7 @@ describe('Login eCommerce App', function () {
   ////////////////////////////////////////////////
   //////////////// CASOS DE ÉXITO ////////////////
   ////////////////////////////////////////////////
-  it('Login exitoso', function () {
+  it('1. Login exitoso', function () {
     /*
     Objetivo: comprobar que un usuario con cuenta existente en el sistema puede hacer LogIn con sus datos de acceso
 
@@ -45,7 +45,7 @@ describe('Login eCommerce App', function () {
   ////////////////////////////////////////////////
   //////////////// CASOS DE ERROR ////////////////
   ////////////////////////////////////////////////
-  it('Login con usuario incorrecto', function () {
+  it('2. Login con usuario incorrecto', function () {
     /*
     Objetivo: comprobar que un usuario con cuenta existente en el sistema no puede hacer LogIn si introduce un nombre de usuario incorrecto
               y que se muestra un mesaje de error claro y coherente
@@ -58,11 +58,11 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado: 
       1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de que el nombre de usuario introducido es incorrecto
+      2. Se muestra el mensaje de error "El nombre usuario indroducido es incorrecto"
     */
   })
 
-  it('Login con contraseña incorrecta', function () {
+  it('3. Login con contraseña incorrecta', function () {
     /*
     Objetivo: comprobar que un usuario con cuenta existente en el sistema no puede hacer LogIn si introduce una contraseña incorrecta
               y que se muestra un mesaje de error claro y coherente
@@ -75,14 +75,14 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado: 
       1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de que la contraseña introducida es incorrecta
+      2. Se muestra el mensaje de error "La contraseña indroducida es incorrecta"
     */
   })
 
-  it('Login con usuario y contraseña incorrectos', function () {
+  it('4. Login con usuario y contraseña incorrectos', function () {
     /*
     Objetivo: comprobar que un usuario no puede hacer a la herramienta si introduce ambos campos incorrectamente
-              y que se muestra un mesaje de error claro y coherente
+              y que se muestra un mensaje de error claro y coherente
     Pasos:
       1. Navegar a la página de login
       2. Introducir nombre de usuario incorrecto
@@ -91,11 +91,11 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado: 
       1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de que no existe ningún usuario con esas credenciales
+      2. Se muestra el mensaje de error "No existe ningún usuario con esas credenciales"
     */
   })
 
-  it('Campo usuario vacío', function () {
+  it('5. Campo usuario vacío', function () {
     /*
     Objetivo: comprobar que un usuario no puede hacer a la herramienta si introduce una contraseña válida pero deja en blanco el nombre de usuario
               y que se muestra un mesaje de error claro y coherente
@@ -107,11 +107,11 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado: 
       1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de que debe introducir el nombre de usuario
+      2. Se muestra el mensaje de error "Nombre usuario vacío. Debe introducir un nombre de usuario"
     */
   })
 
-  it('Campo contraseña vacío', function () {
+  it('6. Campo contraseña vacío', function () {
     /*
     Objetivo: comprobar que un usuario no puede hacer a la herramienta si introduce un nombre de usuario válido pero deja en blanco la contraseña
               y que se muestra un mesaje de error claro y coherente
@@ -123,56 +123,14 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado: 
       1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de que debe introducir la contraseña
-    */
-  })
-
-  ///////////////////////////// VALIDACIÓN DE ENTRADA /////////////////////////////
-  // NOTA: Esto sería más bien un test de componente, 
-  //       pero como no se especifica el enfoque de los tests, lo añado igualmente
-  /////////////////////////////////////////////////////////////////////////////////
-  it('Restriccones de formato en el campo usuario', function () {
-    /*
-    Objetivo: comprobar que en caso de que el nombre de usuario introducido por el usuario no cumpla con las restricciones de formato definidas
-              (como caracteres especiales no permitidos o longitud máxima) éste no pueda acceder al sistema
-              y que se muestra un mesaje de error claro y coherente
-    Pasos:
-      1. Navegar a la página de login
-      2. Introducir un nombre de usuario que incumpla una de las restricciones definidas
-      3. Introducir una contraseña válida
-      4. Presionar botón de login
-
-    Repetir test cara cada restricción definida
-
-    Resultado esperado: 
-      1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario del formato que debe seguir el campo 'Nombre de usuario'
-    */
-  })
-
-  it('Requisitos de formato en el campo contraseña', function () {
-    /*
-    Objetivo: comprobar que en caso de que la contraseña introducida por el usuario no cumpla con los requisitos de formato definidas
-              (como caracteres especiales no permitidos, caracteres obligatorios, longitud máxima, longitud mínima o conjunto de requisitos a cumplir)
-              éste no pueda acceder al sistema y que se muestra un mesaje de error claro y coherente
-    Pasos:
-      1. Navegar a la página de login
-      2. Introducir un nombre de usuario válido
-      3. Introducir una contraseña que no cumpla con alguno de los requisitos de formato definidos
-      4. Presionar botón de login
-
-    Repetir test cara cada requisito definido
-
-    Resultado esperado: 
-      1. El usuario no puede acceder a la herramienta. Se mantiene en la página de LogIn
-      2. Se muestra un mensaje de error informando al usuario de los requisitos de formato que debe cumplir la contraseña
+      2. Se muestra el mensaje de error "Contraseña vacía. Debe introducir una contraseña"
     */
   })
 
   ///////////////////////////////////////////////
   /////////////////// SESIÓN ////////////////////
   ///////////////////////////////////////////////
-  it('Persistencia de sesión', function () {
+  it('7. Persistencia de sesión', function () {
     /*
     Objetivo: comprobar un usuario logueado puede navegar por las distintas páginas de la herramienta sin perder la sesión
 
@@ -181,15 +139,16 @@ describe('Login eCommerce App', function () {
       2. Introducir un nombre de usuario válido
       3. Introducir una contraseña válida
       4. Presionar botón de login
-      5. En caso de que la herramienta permita alguna configuración de usuario, cambiar una configuración de usuario
-      6. Navegar a distintas páginas de la herramienta
-      7. Comprobar que el usuario puede acceder a la página de perfil y que las cookies de sesión están almacenadas y mantienen sus valores tras el paso 5
+      5. Navegar a distintas páginas de la herramienta y comprobar en cada una de ellas que la sesión del usuario sigue activa
+      6. Finalmente, comprobar que las cookies y datos en el almacenamiento local son válidos y reflejan el estado de la sesión
 
-    Resultado esperado: La sesión del usuario se mantiene activa y con las cookies correspondientes
+    Resultado esperado:
+      1. La sesión del usuario se mantiene activa al navegar por distintas páginas de la herramienta
+      2. Las cookies y datos en el almacenamiento local son válidos y reflejan el estado de la sesión
     */
   })
 
-  it('Cierre de sesión', function () {
+  it('8. Cierre manual de sesión', function () {
      /*
     Objetivo: comprobar un usuario logueado puede cerrar su sesión correctamente
 
@@ -205,11 +164,25 @@ describe('Login eCommerce App', function () {
     */
   })
 
-  it('Timeout de sesión', function () {
+  it('9. Recordar sesión al cerrar el navegador', function () {
     /*
-    Condiciones iniciales: Timeout de sesion establecido al valor mínimo X
+   Objetivo: comprobar que la sesión de un usuario logueado con la opción 'Recordar sesión' se mantiene activa tras cerrar el navegador
 
+   Condiciones iniciales: un usuario logueado con la opción 'Recordar sesión' cierra el navegador
+
+   Pasos:
+     1. Abrir el navegador
+     2. Navegar a la aplicación
+
+   Resultado esperado: El usuario se mantiene logueado tras el cierre del navegador
+   */
+ })
+
+  it('10. Timeout de sesión', function () {
+    /*
     Objetivo: comprobar que tras un tiempo X de inactividad de un usuario logueado, se cierra su sesión
+
+    Condiciones iniciales: Timeout de sesion establecido al valor mínimo X
 
     Pasos:
       1. Navegar a la página de login
@@ -227,12 +200,12 @@ describe('Login eCommerce App', function () {
   //////////////// SEGURIDAD ////////////////
   ///////////////////////////////////////////
 
-  it('No completar el Captcha tras múltiples intentos de inicio de sesión fallidos', function () {
+  it('11. No completar el Captcha tras múltiples intentos de inicio de sesión fallidos', function () {
     /*
+    Objetivo: comprobar que el usuario no puede iniciar sesión sin completar el captcha
+
     Condiciones iniciales:
       - Número de intentos para la habilitación del captcha = 3
-
-    Objetivo: comprobar que el usuario no puede iniciar sesión sin completar el captcha
 
     Pasos:
       1. Navegar a la página de login
@@ -243,7 +216,7 @@ describe('Login eCommerce App', function () {
 
     Resultado esperado:
       1. El usuario no puede acceder a la herramienta sin completar el captcha. Se mantiene en la página de LogIn.
-      2. Se muestra un mensaje de error informando al usuario de que debe completar el captcha
+      2. Se muestra el mensaje de error "Debe completar el captcha para iniciar sesión"
     */
   })
   
