@@ -64,10 +64,30 @@ Descargando el proyecto como zip:
 * **Open Cypress**: Allows you to open Cypress specs and single it() blocks directly from VS Code.
 * **Test Utils**: Easily add or remove .only and .skip modifiers with keyboard shortcuts or the command palette.
 
+
+## Detalles de la solución a tener en cuenta
+
+**En el ejercicio 1:**
+
+* Las capturas de pantalla se guardaran en carpetas con el nombre del navegador utilizado y el nombre del fichero será el de la resolución utilizada en el test
+
+* Para el la ejecución del test en distintos navegadores y resoluciones se ha definido el script "e2e:example" en el fichero 'package.json que ejecuta el test con 4 configuraciones distintas:
+
+    1. browser = firefox | resolución fulHD (1980x1080)
+    2. browser = firefox | resolución mobile (375x667)
+    3. browser = edge | resolución fulHD (1980x1080)
+    4. browser = edge | resolución mobile (375x667)
+
+    Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal
+    > npm run e2e:example
+
+**En el ejercicio 2**
+Se han obviado las pruebas de visualización, las pruebas 'cross browser' y las pruebas de carga y rendimiento
+
+
 ## Autor
 
 Miguel Núñez Zels
-
 
 ## Docs de referencia:
 

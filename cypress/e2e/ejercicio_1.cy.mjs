@@ -11,8 +11,8 @@ Desarrolla un script que:
       - Se ejecute la misma prueba con distintos navegadores o resoluciones
 */
 
-import { HomePage } from "../../support/Pages/HomePage.mjs"
-import { ArticlePage } from "../../support/Pages/ArticlePage.mjs"
+import { HomePage } from "../support/Pages/HomePage.mjs"
+import { ArticlePage } from "../support/Pages/ArticlePage.mjs"
 
 /*
   Para la ejecución del mismo test en distintos navegadores y con diferentes resoluciones, he definido una serie de scripts en "package.json".
@@ -30,7 +30,7 @@ const baseUrl = 'https://www.wikipedia.org/'
 describe('Automatización Web Básica', function () {
   //En caso de tuviesemos mas tests sobre la página de wikipedia la navegación a la misma sería un paso común a todos los tests
   beforeEach(() => {
-    cy.visit(baseUrl) // visitamos wikipedia
+    cy.visit(baseUrl) // navegamos a la web de wikipedia
   })
 
   it(`${Cypress.browser.name} [${Cypress.config("viewportWidth")}x${Cypress.config("viewportHeight")}]`, function () {
