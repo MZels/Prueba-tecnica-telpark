@@ -23,7 +23,7 @@ https://docs.cypress.io/app/get-started/install-cypress#System-requirements
 
 ## Instrucciones de instalación
 
-### 1. clonar o desarcargar el repositorio:
+### 1. Clonar o descargar el repositorio:
 
 **Mediante git:**
 
@@ -65,7 +65,8 @@ Descargando el proyecto como zip:
 **Caso cross-browser: Ejecucion repetida del test con distintas configuraciones**
 
 Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal:
-    > npm run e2e:example
+
+> npm run e2e:example
 
 ## Extensiones recomendadas para el desarrollo con Visual Studio Code:
 
