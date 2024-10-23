@@ -23,7 +23,7 @@ https://docs.cypress.io/app/get-started/install-cypress#System-requirements
 
 ## Instrucciones de instalación
 
-En un entorno profesional es común excluír los ficheros necesarios para la ejecución de Cypress (directorio "node_modules" del proyecto) por su peso, pero con el fin de facilitar la ejecución de esta prueba técnica, el repositorio incluye todo lo necesario para ejecutar la solución. De esta manera, tan solo será neceario clonar o desarcargar el repositorio siguiendo uno de estos métodos:
+### 1. clonar o desarcargar el repositorio:
 
 **Mediante git:**
 
@@ -38,22 +38,34 @@ Descargando el proyecto como zip:
 
 ![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/captura_download_zip.png?raw=true)
 
-### Instrucciones de Ejecución de las pruebas
+### 2. Instalar dependencias del proyecto:
 
 1. Abrir un terminal en tu IDE de preferencia.
-2. Situarse en la carpeta raíz del proyecto (donde se encuentra el fichero cypress.config.mjs)
-3. Abrir Cypress con el comando:
+2. Situarse en la carpeta raíz del proyecto (donde se encuentra el fichero 'package.json')
+
+    > npm install
+
+### Instrucciones de Ejecución de las pruebas
+
+**Caso simple: Ejecucion única del test con la interfaz gráfica de Cypress**
+
+1. Desde el IDE, en el directorio raíz del proyecto, abrir Cypress con el comando:
 
     > npx cypress open
    
-4. Seleccionar la opción "E2E Testing".
-5. Seleccionar el navegador a utilizar para las pruebas.
-6. En la sección Specs, se mostrarán los dos ficheros de pruebas que resuelven la prueba técnica (uno para cada ejercicio):
+2. Seleccionar la opción "E2E Testing".
+3. Seleccionar el navegador a utilizar para las pruebas.
+4. En la sección Specs, se mostrarán los dos ficheros de pruebas que resuelven la prueba técnica (uno para cada ejercicio):
 
     * ejercicio_1.cy.js
     * ejercicio_2.cy.js
    
-7. Seleccionar el que se desea ejecutar (Cypress ejecutará las prueba de ese Spec en el navegador seleccionado)
+5. Seleccionar el que se desea ejecutar (Cypress ejecutará las prueba de ese Spec en el navegador seleccionado)
+
+**Caso cross-browser: Ejecucion repetida del test con distintas configuraciones**
+
+Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal:
+    > npm run e2e:example
 
 ## Extensiones recomendadas para el desarrollo con Visual Studio Code:
 
@@ -78,8 +90,6 @@ Descargando el proyecto como zip:
     - browser = edge | resolución fulHD (1980x1080)
     - browser = edge | resolución mobile (375x667)
 
-    Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal:
-    > npm run e2e:example
 
 **En el ejercicio 2**
 El diseño de las pruebas solitadas, lo he realizado en las correspondientes 'Specs' que implementaría en el proyecto redactandolos en un comentario dentro de cada 'it':
