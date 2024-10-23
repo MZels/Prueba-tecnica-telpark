@@ -23,7 +23,7 @@ https://docs.cypress.io/app/get-started/install-cypress#System-requirements
 
 ## Instrucciones de instalación
 
-Aunque es común excluír los ficheros necesarios para la ejecución de Cypress (directorio "node_modules" del proyecto) por su peso, con el fin de facilitar la ejecución de esta prueba técnica, el repositorio incluye todo lo necesario para ejecutar la solución. De esta manera, tan solo será neceario clonar el repositorio siguiendo estos pasos:
+En un entorno profesional es común excluír los ficheros necesarios para la ejecución de Cypress (directorio "node_modules" del proyecto) por su peso, pero con el fin de facilitar la ejecución de esta prueba técnica, el repositorio incluye todo lo necesario para ejecutar la solución. De esta manera, tan solo será neceario clonar o desarcargar el repositorio siguiendo uno de estos métodos:
 
 **Mediante git:**
 
@@ -41,7 +41,7 @@ Descargando el proyecto como zip:
 ### Instrucciones de Ejecución de las pruebas
 
 1. Abrir un terminal en tu IDE de preferencia.
-2. Situarse en la carpeta raíz del proyecto clonado.
+2. Situarse en la carpeta raíz del proyecto (donde se encuentra el fichero cypress.config.mjs)
 3. Abrir Cypress con el comando:
 
     > npx cypress open
@@ -73,17 +73,16 @@ Descargando el proyecto como zip:
 
 * Para el la ejecución del test en distintos navegadores y resoluciones se ha definido el script "e2e:example" en el fichero 'package.json que ejecuta el test con 4 configuraciones distintas:
 
-    1. browser = firefox | resolución fulHD (1980x1080)
-    2. browser = firefox | resolución mobile (375x667)
-    3. browser = edge | resolución fulHD (1980x1080)
-    4. browser = edge | resolución mobile (375x667)
+    - browser = firefox | resolución fulHD (1980x1080)
+    - browser = firefox | resolución mobile (375x667)
+    - browser = edge | resolución fulHD (1980x1080)
+    - browser = edge | resolución mobile (375x667)
 
-    Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal
+    Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal:
     > npm run e2e:example
 
 **En el ejercicio 2**
 Se han obviado las pruebas de visualización, las pruebas 'cross browser' y las pruebas de carga y rendimiento
-
 
 ## Autor
 
