@@ -36,7 +36,7 @@ En un entorno profesional es común excluír los ficheros necesarios para la eje
 
 Descargando el proyecto como zip:
 
-![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/captura_download_zip.png?raw=true)
+![Descargar zip del proyecto](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/captura_download_zip.png?raw=true)
 
 ### Instrucciones de Ejecución de las pruebas
 
