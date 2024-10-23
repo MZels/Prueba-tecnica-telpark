@@ -84,8 +84,8 @@ Descargando el proyecto como zip:
 **En el ejercicio 2**
 El diseño de las pruebas solitadas, lo he realizado en las correspondientes 'Specs' que implementaría en el proyecto redactandolos en un comentario dentro de cada 'it':
 
-![specs para el ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/estructura_specs.png?raw=true)
-![ejemplo de spec del ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/ejemplo_spec.png?raw=true)
+![specs para el ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/estructura_specs.png?raw=true)
+![ejemplo de spec del ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/ejemplo_spec.png?raw=true)
 
 Para la elaboración del plan de pruebas se han considerado únicamente los tests e2e automatizables que aportan valor, por lo tanto no se han tenido en consideración los siguiente tipos de pruebas:
 
