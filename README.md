@@ -4,7 +4,7 @@ En este repositorio se resuelven los ejercicios de la prueba técnica propuesta 
 
 ## Descripción de la solución propuesta:
 
-Para la solución de esta prueba técnica se ha optado por el siguiente entorno tecnológico:
+Para la solución de esta prueba técnica se ha optado por el siguiente entorno de desarrollo:
 
 * Cypress como framework de automatización de pruebas
 * Javascript con ECMAScript Modules
@@ -30,7 +30,7 @@ https://docs.cypress.io/app/get-started/install-cypress#System-requirements
 1. Crear una carpeta en la que clonar este repositorio
 2. Clonar el repositorio: 
 
-    > git clone https://github.com/MZels/Prueba-tecnica-telpark
+        git clone https://github.com/MZels/Prueba-tecnica-telpark
 
 **Por descarga directa**
 
@@ -43,30 +43,29 @@ Descargando el proyecto como zip:
 1. Abrir un terminal en tu IDE de preferencia.
 2. Situarse en la carpeta raíz del proyecto (donde se encuentra el fichero 'package.json')
 
-    > npm install
+        npm install
 
 ### Instrucciones de Ejecución de las pruebas
 
-**Caso simple: Ejecucion única del test con la interfaz gráfica de Cypress**
+**Caso simple: Ejecución única del test con la interfaz gráfica de Cypress**
 
 1. Desde el IDE, en el directorio raíz del proyecto, abrir Cypress con el comando:
 
-    > npx cypress open
+        npx cypress open
    
 2. Seleccionar la opción "E2E Testing".
 3. Seleccionar el navegador a utilizar para las pruebas.
-4. En la sección Specs, se mostrarán los dos ficheros de pruebas que resuelven la prueba técnica (uno para cada ejercicio):
+4. En la sección Specs, se mostrará el fichero con el test que resuelven el ejercicio 1 de la prueba técnica:
 
     * ejercicio_1.cy.js
-    * ejercicio_2.cy.js
    
-5. Seleccionar el que se desea ejecutar (Cypress ejecutará las prueba de ese Spec en el navegador seleccionado)
+5. Hacer click sobre él para ejecutarlo (Cypress ejecutará las pruebas de esa Spec en el navegador seleccionado)
 
-**Caso cross-browser: Ejecucion repetida del test con distintas configuraciones**
+**Caso cross-browser: Ejecución repetida del test con distintas configuraciones**
 
-Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en el terminal:
+Para la ejecución de estos 4 casos seguidos, se debe introducir el siguiente comando en el terminal:
 
-> npm run e2e:example
+        npm run e2e:example
 
 ## Extensiones recomendadas para el desarrollo con Visual Studio Code:
 
@@ -93,7 +92,7 @@ Para la ejecución de estos 4 casos seguidos, se debe introducir el comando en e
 
 
 **En el ejercicio 2**
-El diseño de las pruebas solitadas, lo he realizado en las correspondientes 'Specs' que implementaría en el proyecto redactandolos en un comentario dentro de cada 'it':
+El diseño de las pruebas solitadas, lo he realizado en las correspondientes 'Specs' que implementaría en el proyecto redactándolos en un comentario dentro de cada 'it':
 
 ![specs para el ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/estructura_specs.png?raw=true)
 ![ejemplo de spec del ejercicio 2](https://github.com/MZels/Prueba-tecnica-telpark/blob/master/capturas/ejemplo_spec.png?raw=true)
